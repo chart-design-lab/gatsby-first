@@ -1,15 +1,20 @@
-import * as React from "react"
+// src/pages/404.js
+import React, { useEffect } from "react"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+const NotFoundPage = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // ルートアクセスの場合、index.htmlにリダイレクト
+      window.location.replace("/index.html")
+    }
+  }, [])
 
-const NotFoundPage = () => (
-  <Layout>
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
-
-export const Head = () => <Seo title="404: Not Found" />
+  return (
+    <div>
+      <h1>ページが見つかりません</h1>
+      <p>リダイレクト中...</p>
+    </div>
+  )
+}
 
 export default NotFoundPage
