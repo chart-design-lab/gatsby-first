@@ -5,3 +5,13 @@
  */
 
 // You can delete this file if you're not using it
+// gatsby-browser.js
+// gatsby-browser.js
+if (process.env.NODE_ENV === 'production') {
+    exports.onClientEntry = () => {
+      if (window.location.pathname === "/") {
+        window.location.replace("/index.html")
+      }
+    }
+  }
+  
