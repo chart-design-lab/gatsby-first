@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[883],{429:function(e,t,l){l.r(t);var n=l(7294);t.default=()=>((0,n.useEffect)((()=>{"undefined"!=typeof window&&window.location.replace("/index.html")}),[]),n.createElement("div",null,n.createElement("h1",null,"ページが見つかりません"),n.createElement("p",null,"リダイレクト中...")))}}]);
+//# sourceMappingURL=component---src-pages-404-js-fe4e1470ff680bcd50ec.js.map
